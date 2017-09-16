@@ -5,11 +5,11 @@ package com.monetatech.monitor;
  */
 public class MarketMonitor implements IMarketMonitor {
 
-    public void quoteUpdate(String symbol, long bidWen, long bidSize, long askWen, long askSize) {
+    public void quoteUpdate(long timestampMs, long bidWen, long bidSize, long askWen, long askSize) {
 
     }
 
-    public void tradeUpdate(String symbol, long tradeWen, long tradeSize) {
+    public void tradeUpdate(long timestampMs, long tradeWen, long tradeSize) {
 
     }
 
