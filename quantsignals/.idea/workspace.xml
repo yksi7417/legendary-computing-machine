@@ -2,17 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="362d21e6-9d21-4f70-ad82-9d2104b0fc32" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/joda_time_joda_time_2_9_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/monetatech/common/IClock.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/monetatech/utils/TimeUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/quantsignals.iml" afterPath="$PROJECT_DIR$/.idea/modules/quantsignals.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/quantsignals_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/quantsignals_main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/quantsignals_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/quantsignals_test.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/preferred-vcs.xml" afterPath="$PROJECT_DIR$/.idea/preferred-vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/monetatech/monitor/IMarketMonitor.java" afterPath="$PROJECT_DIR$/src/main/java/com/monetatech/monitor/IMarketMonitor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/monetatech/monitor/MarketMonitor.java" afterPath="$PROJECT_DIR$/src/main/java/com/monetatech/monitor/MarketMonitor.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -46,25 +35,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IMarketMonitor.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IMarketMonitor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/monetatech/monitor/IMarketMonitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="133">
+              <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MarketMonitor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MarketMonitor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/monetatech/monitor/MarketMonitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding>
-                <marker date="1505536512074" expanded="true" signature="235:243" ph="{...}" />
-                <marker date="1505536512074" expanded="true" signature="322:330" ph="{...}" />
-              </folding>
+            <state relative-caret-position="330">
+              <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -83,10 +69,8 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/monetatech/common/IClock.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <marker date="1505537598196" expanded="true" signature="151:175" ph="{...}" />
-              </folding>
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -474,9 +458,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/monetatech/utils/PriceUtils.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/monetatech/monitor/MarketMonitorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/monetatech/utils/TimeUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/monetatech/monitor/MarketMonitor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/monetatech/common/IClock.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/monetatech/monitor/IMarketMonitor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/monetatech/monitor/MarketMonitor.java" />
       </list>
     </option>
   </component>
@@ -1194,10 +1178,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-          <folding>
-            <marker date="1505536512074" expanded="true" signature="235:243" ph="{...}" />
-            <marker date="1505536512074" expanded="true" signature="322:330" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1248,28 +1229,23 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/monetatech/common/IClock.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <marker date="1505537598196" expanded="true" signature="151:175" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/monetatech/monitor/MarketMonitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <marker date="1505536512074" expanded="true" signature="235:243" ph="{...}" />
-            <marker date="1505536512074" expanded="true" signature="322:330" ph="{...}" />
-          </folding>
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/monetatech/monitor/IMarketMonitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="133">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/monetatech/monitor/MarketMonitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
           <folding />
         </state>
       </provider>
