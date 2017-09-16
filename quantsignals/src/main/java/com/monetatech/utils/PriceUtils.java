@@ -6,7 +6,7 @@ package com.monetatech.utils;
  * double's rounding error causes many problems in representing price.
  * To maintain performance and accurately represent price, this system is representing currency in Wen instead of dollars.
  * Wen, is defined as 1/1000 of a dollar, as currency unit in our system.
- * Wen is traditionally smallest unit of currecny in China.
+ * Wen is traditionally smallest unit of currency in China.
  * This is also smallest spread in HKEx
  *
  * https://zh.wikipedia.org/wiki/%E6%96%87_(%E8%B2%A8%E5%B9%A3)

@@ -8,14 +8,9 @@ import static org.junit.Assert.*;
 /**
  * Created by asimoneta on 9/16/2017.
  */
-public class MarketMonitorTest {
+public class ThsrMonitorTest {
     @Before
     public void setUp() throws Exception {
-
-    }
-
-    @Test
-    public void quoteUpdate() throws Exception {
 
     }
 
