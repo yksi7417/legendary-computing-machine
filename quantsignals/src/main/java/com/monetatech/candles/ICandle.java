@@ -9,9 +9,12 @@ public interface ICandle {
     int getYYYYMMDD();
     int getHHMMSS();
 
+    int getDurationInSeconds();
+
     long getOpen();
     long getHigh();
     long getLow();
     long getClose();
     long getVolume();
+    long getCount();
 }
