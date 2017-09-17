@@ -5,5 +5,7 @@ package com.monetatech.signals;
  * Tim-Harry-Support-Resistance Signal
  * Credit to Tim Chung for original algorithm, Harry Chan for original implementation
  */
+
 public class ThsrSignal {
+
 }
