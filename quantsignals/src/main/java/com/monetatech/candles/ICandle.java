@@ -16,5 +16,5 @@ public interface ICandle {
     long getLow();
     long getClose();
     long getVolume();
-    long getCount();
+    long getTradeCount();
 }
