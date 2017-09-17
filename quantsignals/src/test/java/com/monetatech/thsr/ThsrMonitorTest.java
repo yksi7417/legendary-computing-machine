@@ -1,9 +1,7 @@
-package com.monetatech.monitor;
+package com.monetatech.thsr;
 
 import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by asimoneta on 9/16/2017.

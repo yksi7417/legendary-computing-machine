@@ -1,37 +1,34 @@
-package com.monetatech.monitor;
+package com.monetatech.thsr;
+
+/**
+ * Created by asimoneta on 9/17/2017.
+ */
 
 import com.monetatech.common.ISubscriptionManager;
-import com.monetatech.signals.ThsrSignal;
+import com.monetatech.common.ITradeEventHandler;
+import com.monetatech.monitor.IMarketMonitor;
 
 import java.util.function.Consumer;
 
-/**
- * Created by asimoneta on 9/16/2017.
- */
-
 public class ThsrMonitor implements ITradeEventHandler, IMarketMonitor<ThsrSignal> {
 
-    private final ISubscriptionManager<String, ThsrSignal> subscriptionManager;
     private final String symbol;
+    private final ISubscriptionManager<String, ThsrSignal> subscriptionManager;
+    private final IThsrCalculator calculator;
 
-    public ThsrMonitor(String symbol, ISubscriptionManager<String, ThsrSignal> subscriptionManager) {
+    public ThsrMonitor(String symbol,
+                       ISubscriptionManager<String, ThsrSignal> subscriptionManager,
+                       IThsrCalculator calculator) {
         this.symbol = symbol;
         this.subscriptionManager = subscriptionManager;
+        this.calculator = calculator;
     }
 
     @Override
     public void tradeUpdate(long timestampMs, long tradeWen, long tradeSize) {
-        updateTrade(timestampMs, tradeWen, tradeSize);
-        ThsrSignal signal = generateSignal();
+        calculator.tradeUpdate(timestampMs, tradeWen, tradeSize);
+        ThsrSignal signal = calculator.calculate();
         subscriptionManager.fireEvent(symbol, signal);
-    }
-
-    private void updateTrade(long timestampMs, long tradeWen, long tradeSize){
-
-    }
-
-    private ThsrSignal generateSignal(){
-        return null;
     }
 
     @Override

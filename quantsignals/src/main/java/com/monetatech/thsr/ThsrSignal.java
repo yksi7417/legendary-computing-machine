@@ -1,4 +1,4 @@
-package com.monetatech.signals;
+package com.monetatech.thsr;
 
 /**
  * Created by asimoneta on 9/16/2017.
@@ -6,6 +6,8 @@ package com.monetatech.signals;
  * Credit to Tim Chung for original algorithm, Harry Chan for original implementation
  */
 
-public class ThsrSignal {
-
+public enum ThsrSignal {
+    NONE,
+    MAX_DETECTED,
+    MIN_DETECTED,;
 }

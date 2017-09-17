@@ -1,4 +1,4 @@
-package com.monetatech.monitor;
+package com.monetatech.common;
 
 /**
  * Created by asimoneta on 9/16/2017.
