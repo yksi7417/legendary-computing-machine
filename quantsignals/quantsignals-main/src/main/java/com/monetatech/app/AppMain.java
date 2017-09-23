@@ -5,6 +5,10 @@ package com.monetatech.app;
  */
 public class AppMain {
 
+    public AppMain() {
+
+    }
+
     public static void main(String[] args){
         System.out.println("Application Starting... ");
     }

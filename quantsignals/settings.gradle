@@ -1,2 +1,3 @@
+include 'quantsignals-main'
 rootProject.name = 'quantsignals'
 

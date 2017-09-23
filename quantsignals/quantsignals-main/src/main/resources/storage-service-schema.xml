@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sbe:messageSchema xmlns:sbe="http://fixprotocol.io/2016/sbe"
+                   package="uk.co.real_logic.workshop"
+                   id="1"
+                   version="0"
+                   semanticVersion="5.2"
+                   description="Message Codecs for interacting with a Storage Service"
+                   byteOrder="littleEndian">
+    <types>
+        <composite name="messageHeader" description="Message identifiers and length of message root">
+            <type name="blockLength" primitiveType="uint16"/>
+            <type name="templateId" primitiveType="uint16"/>
+            <type name="schemaId" primitiveType="uint16"/>
+            <type name="version" primitiveType="uint16"/>
+        </composite>
+        <composite name="groupSizeEncoding" description="Repeating group dimensions">
+            <type name="blockLength" primitiveType="uint16"/>
+            <type name="numInGroup" primitiveType="uint16"/>
+        </composite>
+        <composite name="varStringEncoding">
+            <type name="length" primitiveType="uint32" maxValue="1073741824"/>
+            <type name="varData" primitiveType="uint8" length="0" characterEncoding="US-ASCII"/>
+        </composite>
+        <composite name="varDataEncoding">
+            <type name="length" primitiveType="uint32" maxValue="1073741824"/>
+            <type name="varData" primitiveType="uint8" length="0"/>
+        </composite>
+    </types>
+
+    <sbe:message name="FileCreate" id="1" description="Create a file in storage">
+        <field name="correlationId" id="1" type="int64"/>
+        <field name="fileLength" id="2" type="int32"/>
+        <data name="fileName" id="3" type="varStringEncoding"/>
+    </sbe:message>
+
+    <sbe:message name="FileChunk" id="2" description="Transfer a chunk of a file">
+        <field name="correlationId" id="1" type="int64" description="The same correlationId used for create or read"/>
+        <field name="chunkPosition" id="2" type="int32"/>
+        <field name="fileLength" id="3" type="int32"/>
+        <data name="dataChunk" id="4" type="varDataEncoding"/>
+    </sbe:message>
+
+    <sbe:message name="FileRead" id="3" description="Read a file from storage">
+        <field name="correlationId" id="1" type="int64"/>
+        <field name="responseStreamId" id="2" type="int32"/>
+        <data name="responseChannel" id="3" type="varStringEncoding"/>
+        <data name="fileName" id="4" type="varStringEncoding"/>
+    </sbe:message>
+
+    <sbe:message name="FileDelete" id="4" description="Delete a file in storage">
+        <field name="correlationId" id="1" type="int64"/>
+        <data name="fileName" id="2" type="varStringEncoding"/>
+    </sbe:message>
+
+    <sbe:message name="FileList" id="5" description="List files in storage">
+        <field name="correlationId" id="1" type="int64"/>
+        <field name="responseStreamId" id="2" type="int32"/>
+        <data name="responseChannel" id="3" type="varStringEncoding"/>
+    </sbe:message>
+
+    <sbe:message name="FileListing" id="6" description="Listing of files in storage">
+        <field name="correlationId" id="1" type="int64"/>
+        <group name="fileNames" id="2" dimensionType="groupSizeEncoding">
+            <data name="fileName" id="3" type="varStringEncoding"/>
+        </group>
+    </sbe:message>
+</sbe:messageSchema>
