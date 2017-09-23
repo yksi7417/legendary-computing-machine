@@ -2,6 +2,9 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.8">
+      <module name="quantsignals-main_generated" target="1.8" />
+      <module name="quantsignals-main_main" target="1.8" />
+      <module name="quantsignals-main_test" target="1.8" />
       <module name="quantsignals_main" target="1.8" />
       <module name="quantsignals_test" target="1.8" />
     </bytecodeTargetLevel>

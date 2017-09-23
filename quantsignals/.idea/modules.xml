@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/quantsignals.iml" filepath="$PROJECT_DIR$/.idea/modules/quantsignals.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/quantsignals_main.iml" filepath="$PROJECT_DIR$/.idea/modules/quantsignals_main.iml" group="quantsignals" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/quantsignals_test.iml" filepath="$PROJECT_DIR$/.idea/modules/quantsignals_test.iml" group="quantsignals" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/quantsignals-main/quantsignals-main.iml" filepath="$PROJECT_DIR$/.idea/modules/quantsignals-main/quantsignals-main.iml" group="quantsignals-main" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/quantsignals-main/quantsignals-main_generated.iml" filepath="$PROJECT_DIR$/.idea/modules/quantsignals-main/quantsignals-main_generated.iml" group="quantsignals-main" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/quantsignals-main/quantsignals-main_main.iml" filepath="$PROJECT_DIR$/.idea/modules/quantsignals-main/quantsignals-main_main.iml" group="quantsignals-main" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/quantsignals-main/quantsignals-main_test.iml" filepath="$PROJECT_DIR$/.idea/modules/quantsignals-main/quantsignals-main_test.iml" group="quantsignals-main" />
     </modules>
   </component>
 </project>
